@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="vbean" class="Classes.Vehicle">
+        <property name="vehicle_number" value="TS31EG9834"/>
+        <property name="color" value="Matte Blue"/>
+        <property name="owner_name" value="Venkata Jaswanth Potnuru"/>
+    </bean>
+
+    <bean id="cbean" class="Classes.Car">
+        <property name="company" value="Tesla"/>
+        <property name="model" value="X3"/>
+        <property name="vehicle" ref="vbean"/>
+    </bean>
+</beans>
