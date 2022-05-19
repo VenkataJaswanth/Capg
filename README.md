@@ -1,2 +1,3 @@
-# Capg
-Assignments
+# Capgemini
+- Imarticus Training
+- Angular Stream
