@@ -1,0 +1,22 @@
+
+
+<form #userlogin="ngForm" (ngSubmit)="onclickjasw(userlogin.value)" [ngModel]>
+  <br>
+  <input type="text" required placeholder="Enter Username" name="name" [ngModel]><br><br>
+  <input type="password" required name="password" placeholder="Enter Password"[ngModel]><br>
+
+  <span class="input-group-btn">
+    <h2>
+    <button class="btn btn-primary" type="button" (click)="onclickjasw(userlogin.value)">Login</button></h2>
+    
+</span>
+ 
+</form>
+<br>
+<!--
+<button *ngIf="k" class="btn btn-secondary" type="button">
+<a *ngIf="k" routerLink="/welcome">welcome</a> </button> -->
+<app-welcome  *ngIf="k" [item]="name"></app-welcome>
+<router-outlet></router-outlet>
+
+

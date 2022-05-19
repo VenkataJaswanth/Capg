@@ -1,0 +1,13 @@
+form{
+
+    
+    text-align: center;
+}
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 07px;
+    border-width: 3px;
+    border-style: groove;
+    border-color: black;
+}
